@@ -1,0 +1,24 @@
+digraph {
+	rankdir=TB size="8,10"
+	A [label="Raw Dataset"]
+	B [label="Data Preprocessing"]
+	C [label="Train-Test Split"]
+	D [label="SMOTE (Train Only)"]
+	E [label="Feature Scaling"]
+	F [label="Model Development"]
+	G [label="Cross-Validation"]
+	H [label="Hyperparameter Tuning"]
+	I [label="Final Model"]
+	J [label=Evaluation]
+	K [label="SHAP Explainability"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+	F -> G
+	G -> H
+	H -> I
+	I -> J
+	J -> K
+}
